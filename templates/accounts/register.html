@@ -1,0 +1,287 @@
+<!-- 
+  <!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Register Page</title>
+      <style>
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.sign_up{
+    height: 100vh;
+    background: url(img/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: white;
+    width: 380px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: black;
+    font-size: 30px;
+}
+
+h1::before{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: black;
+    left: 540px;
+    top: 29%;
+    position: absolute;
+}
+
+h1::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: black;
+    right: 540px;
+    top: 29%;
+    position: absolute;
+}
+ 
+#create{
+    font-size: 12px;
+}
+
+input{
+    padding: 6px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.details input{
+   width: 335px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+}
+
+.check{
+    display: inline-block;
+}
+
+#register_btn{
+    text-decoration: none;
+    padding: 10px 120px;
+    border: 1px solid green;
+    background: green;
+    color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#register_btn:hover{
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: .5s;
+    
+}
+
+.term a{
+    color: green;
+}
+
+#privacy{
+    color: green;
+}
+
+.signIn{
+    display: block;
+    color: black;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+}
+
+.checkbox{
+    width: 355px;
+    margin-top: 10px;
+}
+
+.signIn p span a{
+    color: black;
+    margin-left: 6px;
+}
+
+  </style>
+  </head>
+   -->
+  <!-- <body>
+    <div class="background-img">   
+      <section class="sign_up">
+          <div class="container">
+              <h1>Register</h1>
+              <p id="create">Create your account. It's free and only takes a minute</p>
+              <div class="name">
+                <form id="Register" method="post" action="register/">
+                  {% csrf_token %}
+                  <input type="text" placeholder="First Name" required>
+                  <input type="text" placeholder="Last Name" required>
+              </div>
+              <div class="details">
+                  <input type="email" placeholder="Email" required>
+                  <input type="password" placeholder="Passowrd" required>
+                  <input type="password" placeholder="Confirm Password" required>
+              </div>
+              <div class="checkbox">
+                  <input type="checkbox" class="check" required>
+                  <p class="check">I accept the<span class="term"><a href="#">Terms of use</a></span> & <span><a id="privacy" href="#">Privacy Policy</a></span></p>
+              </div>
+              <a href="" id="register_btn">Register Now</a>
+          </div>
+          <div class="signIn">
+              <p>Already have an account?<span><a href="#">Sign in</a></span></p>
+          </div>
+      </section>
+  </body>
+  
+  </html> -->
+
+<!-- 
+  <body>
+    
+    <h2>SRK Registation Page</h2><br>
+    <div class="register">
+    <form id="register" method="post" action="register/">
+        {% csrf_token %}
+        <label><b>Frist Name
+        </b>
+        </label>
+        <input type="text" name="Fname" id="Fname" placeholder="Fristname    ">
+        <br><br>
+        <label><b>Last Name
+        </b>
+        </label>
+        <input type="text" name="Lname" id="Lname" placeholder="Lastname    ">
+        <br><br>
+        <label><b>Password
+        </b>
+        </label>
+        <input type="Password" name="Pass" id="Pass" placeholder="Password   ">
+        <br><br>
+        <label><b>ConfirmPassword
+        </b>
+        </label>
+        <input type="password" placeholder="Confirm Password" id="confirm_password " required>
+        <br><br>
+        <div class="checkbox">  
+          <input type="checkbox" class="check" required>
+          <p class="check">I accept the<span class="term"><a href="#">Terms of use</a></span> & <span><a id="privacy" href="#">Privacy Policy</a></span></p>
+      </div><br><br>
+      <a href="" id="register_btn">Register Now</a>
+   </div>
+    <div class="signIn">
+      <p>Already have an account?<span><a href="file:///C:/Users/stadikonda/OneDrive%20-%20eBay%20Inc/Desktop/demo/demoproject/templates/accounts/login.html">Sign in</a></span></p>
+  </div>
+    </form>
+    
+</div>
+
+</body>
+</html> -->
+
+[<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register Page</title>
+<style>
+body {
+background-color: black;
+}
+label {
+display:inline-block;
+width:235px;
+margin-left: 20px;
+margin-top: 20px;
+font-size: 25px;
+font-family: Calibre; 
+color: white; text-align: left;}
+input  {
+margin-top: 20px;
+margin-right: 20px;
+padding: 12px 20px;}
+#Registation {
+border: 5px solid white;
+width: 600px; 
+height: 400px;
+
+}
+button {
+margin-left: 320px;
+margin-top: 20px;
+margin-bottom: 20px;
+background-color:#00BB00;
+width:120px;
+height: 40px;
+color: white;
+font-size: 20px;
+border-radius: 46px; 
+-moz-border-radius: 46px; 
+-webkit-border-radius: 46px; 
+border: 0px solid #800000;
+font-family: Calibre}
+</style>
+</head>
+<body> 
+<!-- <div id="Registation"> -->
+  <form id="Registation" method="post" action="register/">
+    {% csrf_token %}
+  
+<!-- <form action="/web.engineering" method="post"> -->
+    <div>
+    <label>First name:</label>
+    <input type="text" placeholder="First name" id="Fname" name="firstname" required>
+    </div>
+    <div>
+    <label>Last name:</label>
+    <input type="text" placeholder="Last name" id="Lname" name="lastname" required>
+    </div>
+    <div>
+    <label>Username:</label>
+    <input type="text"placeholder="Username" id="Uname" name="username" required>
+    </div>
+    <div>
+    <label>Password:</label>
+    <input type="password" placeholder="Enter password" id="Pass" name="password" required>
+    </div>
+    <div>
+    <label>Passwordconfirmation:</label>
+    <input type="password" placeholder="Re-enter password" id="Passwordconfirmation" name="Repeat_password" required>
+    </div>
+    <div>
+    <button type="submit" ><b>Register</b></button>
+    </div>
+</form>
+
+</div>
+
+</body>
+</html>
